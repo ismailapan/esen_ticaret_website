@@ -1,0 +1,431 @@
+<!DOCTYPE html><html class="dark" lang="tr" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Hizmetler | ESEN TİCARET</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#da3236",
+                    "tertiary-fixed-dim": "#ffb3ae",
+                    "surface-container-high": "#2a2a2a",
+                    "secondary-fixed": "#ffdada",
+                    "secondary": "#ffb3b6",
+                    "tertiary": "#ffb3ae",
+                    "surface-tint": "#ffb4ab",
+                    "primary-fixed-dim": "#ffb4ab",
+                    "on-secondary-container": "#fe9ea3",
+                    "background-slate": "#121212",
+                    "on-surface": "#e5e2e1",
+                    "on-secondary-fixed": "#3d040e",
+                    "surface-container": "#20201f",
+                    "on-secondary-fixed-variant": "#763037",
+                    "surface-dim": "#131313",
+                    "on-primary-fixed-variant": "#93000d",
+                    "on-primary": "#690006",
+                    "surface-bright": "#393939",
+                    "primary": "#ffb4ab",
+                    "on-background": "#e5e2e1",
+                    "surface": "#131313",
+                    "inverse-surface": "#e5e2e1",
+                    "on-primary-container": "#fffafa",
+                    "surface-container-highest": "#353535",
+                    "on-error-container": "#ffdad6",
+                    "on-surface-variant": "#e7bdb8",
+                    "text-silver": "#E0E0E0",
+                    "on-tertiary": "#68000b",
+                    "outline-variant": "#5d3f3c",
+                    "primary-fixed": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#930014",
+                    "outline": "#ae8883",
+                    "tertiary-fixed": "#ffdad7",
+                    "on-tertiary-fixed": "#410004",
+                    "secondary-container": "#793239",
+                    "on-secondary": "#591a22",
+                    "border-zinc": "#2A2A2A",
+                    "error": "#ffb4ab",
+                    "surface-variant": "#353535",
+                    "on-error": "#690005",
+                    "secondary-fixed-dim": "#ffb3b6",
+                    "background": "#131313",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#fffaff",
+                    "inverse-primary": "#c00014",
+                    "on-primary-fixed": "#410002",
+                    "inverse-on-surface": "#313030",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary-container": "#e31e24",
+                    "surface-container-low": "#1c1b1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "max-width": "1440px"
+            },
+            "fontFamily": {
+                    "label-md": ["JetBrains Mono"],
+                    "headline-sm": ["Space Grotesk"],
+                    "body-sm": ["Hanken Grotesk"],
+                    "headline-md": ["Space Grotesk"],
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-lg": ["Space Grotesk"],
+                    "display-lg": ["Space Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Space Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["72px", {"lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            scroll-behavior: smooth;
+        }
+        .carbon-texture {
+            background-image: radial-gradient(#2a2a2a 0.5px, transparent 0.5px);
+            background-size: 10px 10px;
+            opacity: 0.05;
+        }
+        .before-after-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            user-select: none;
+        }
+        .before-image, .after-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .after-image {
+            clip-path: inset(0 0 0 50%);
+        }
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #e31e24;
+            cursor: ew-resize;
+            z-index: 10;
+        }
+        .slider-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: #e31e24;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(227, 30, 36, 0.4);
+        }
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid #2a2a2a;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border-zinc">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary-container tracking-tighter uppercase text-headline-lg">ESEN TİCARET</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary-container transition-colors" href="#">Ana Sayfa</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary-container transition-colors" href="#">Hakkımızda</a>
+<a class="font-label-md text-label-md text-primary-container border-b-2 border-primary-container pb-1" href="#">Hizmetler</a>
+
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary-container transition-colors" href="#">İletişim</a>
+<a href="#iletisim-harita" class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-2 rounded-lg hover:scale-105 active:scale-95 transition-all uppercase inline-block">KONUM &gt;&gt;</a>
+</div>
+<button class="md:hidden text-primary-container" onclick="document.getElementById('mobile-menu').classList.remove('translate-x-full')">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-20 max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div>
+<span class="font-label-md text-label-md text-primary-container uppercase tracking-widest block mb-4">HİZMETLERİMİZ &amp; ÇÖZÜMLERİMİZ</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg mb-6 leading-tight uppercase">ARACINIZA DEĞER KATAN ÇÖZÜMLER.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Esen Ticaret olarak tır, kamyon ve kamyonetleriniz için kendi atölyemizde yüksek dayanımlı fiberglass rüzgarlıklar üretiyoruz. Bunun yanında, zengin ürün çeşitliliğimizle her türlü aksesuar montajını gerçekleştiriyor ve tamamen sizin tarzınıza özel yazılı/logolu tozluk tasarımları uyguluyoruz.</p>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary-container/10 blur-3xl rounded-full"></div>
+<div class="relative aspect-square rounded-xl overflow-hidden border border-zinc bg-surface-container"><div class="h-full w-full flex items-center justify-center p-8">
+  <h2 class="font-display-lg text-display-lg text-primary-container font-bold tracking-tighter uppercase text-center leading-none opacity-90">
+    ESEN<br>TİCARET
+  </h2>
+</div></div>
+</div>
+</div>
+</section>
+<!-- Service Split 1: Fiberglass Spoiler Production -->
+<section class="bg-surface-container-low py-32 border-t border-border-zinc relative overflow-hidden">
+<div class="carbon-texture absolute inset-0"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto relative z-10">
+<div class="flex flex-col md:flex-row gap-20">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-8">Fiberglass <font color="#e31e24">Rüzgarlık</font>&nbsp;Üretimi ve Montajı</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white">bolt</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Yakıt Optimizasyonu</h4>
+<p class="text-on-surface-variant">Kendi atölyemizde ürettiğimiz aerodinamik rüzgarlıklar, aracınızın rüzgar direncini minimuma indirerek özellikle uzun yolda çok ciddi yakıt tasarrufu sağlar.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 flex-shrink-0 bg-surface-container-highest rounded-lg flex items-center justify-center border border-zinc">
+<span class="material-symbols-outlined text-primary-container">factory</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Çoklu Marka Uyumluluğu</h4>
+<p class="text-on-surface-variant">Scania, Volvo, MAN, Mercedes-Benz ve DAF gibi lider markalar için hassas kalıplar. Kusursuz, fabrika standartlarında montaj.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-8">
+<div class="p-6 border border-zinc bg-surface-container-highest rounded-lg">
+<div class="font-headline-md text-headline-md text-primary-container mb-1">%15</div>
+<div class="font-label-sm text-label-sm uppercase opacity-60">Ort. Yakıt Tasarrufu</div>
+</div>
+<div class="p-6 border border-zinc bg-surface-container-highest rounded-lg">
+<div class="font-headline-md text-headline-md text-primary-container mb-1">Birebir</div>
+<div class="font-label-sm text-label-sm uppercase opacity-60">UYUM</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="before-after-container rounded-xl border border-zinc shadow-2xl overflow-hidden" id="sliderContainer">
+<div class="before-image" data-alt="A side view photograph of a heavy-duty industrial Scania semi-truck without a fiberglass spoiler, parked in a minimalist dark concrete hangar. The lighting is high-contrast, moody, and industrial, emphasizing the raw metal and industrial silhouette. The color palette is dominated by dark grays and blacks with sharp red accent lighting reflecting off the ground. Modern, high-end automotive photography style." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCO6e0pDDWNTFn7Sh-I-wosEilQx5dGU7UbSCXL4s7KZX5m5hB4slMU5VFTVoC-cmHmf6LMfSSMrMNpKYBR2Oofo7NpyjBuJN7tV6DvmmzNDdPEY8Wgu4DVpr_nCUHOeQZ_AFtu2wSatiZqtPaBvTtGIkO262b6shPLT7J-ZmxKC5y33K1djpQ2ZGX_BO6ueGi9v4HP91Vl3VAz2ibe1iuUweotV7K9JhdWiqc2lThY7_zLV2K8WqfV1g&quot;);"></div>
+<div class="after-image" data-alt="The same side view photograph of the heavy-duty industrial Scania semi-truck, now fitted with a sleek, aerodynamic red and black fiberglass spoiler. The spoiler is integrated seamlessly, featuring a polished, metallic finish. The lighting remains high-contrast and moody in the dark hangar, highlighting the new aerodynamic curves and the premium build quality of the fiberglass component. Modern, high-end automotive photography style." id="afterImage" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBo3J0znnkTJPNhfbAci9G9pKfSVONVVzqEaZveLKZPcpH0xomZgIS8OixPKBkDIE1R7wc8z-0AO9TqO6JlZl1sA4Eydxi5HyBpmvwYspjzKGJeZ5QEzsh_6YvyNqXMvevmWRKdNbsSAl1I2gkzIt3hphXqTTFUO5G-QKtMevO7djFJhc2JCZM41KB_d7ObjJ4yhr9WNaiiIGFeomf3dG0xaV2mdAy5JA7iRA5h7CME1iXsfUd-TnxDIQ&quot;); clip-path: inset(0px 0px 0px 43.2836%);"></div>
+<div class="slider-handle" id="sliderHandle" style="left: 43.2836%;">
+<div class="slider-circle">
+<span class="material-symbols-outlined text-white text-sm">unfold_more</span>
+</div>
+</div>
+<div class="absolute top-4 left-4 font-label-md text-label-md bg-background/80 px-3 py-1 rounded border border-zinc">STANDART</div>
+<div class="absolute top-4 right-4 font-label-md text-label-md bg-primary-container/80 px-3 py-1 rounded border border-primary-container">AERODİNAMİK</div>
+</div>
+<p class="mt-6 font-label-sm text-label-sm text-center text-on-surface-variant uppercase tracking-widest italic">Aerodinamiği karşılaştırmak için kaydırın</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Split 2: Accessory Sales & Installation -->
+<section class="py-32 bg-background relative">
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="mb-16 text-center max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 uppercase">PREMIUM AKSESUARLAR VE <font color="#e31e24">KİŞİSELLEŞTİRME</font></h2>
+<p class="text-on-surface-variant font-body-lg">Kendi üretimimiz fiberglass rüzgarlıkların ötesinde, aracınızı yollarda benzersiz kılacak en kaliteli aksesuar çeşitlerini sunuyoruz. Geniş ürün yelpazemiz ve usta işçiliğimizle ağır vasıtanıza hak ettiği şıklığı kazandırıyoruz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Accessory Card 1 -->
+<div class="group relative bg-surface-container border border-zinc rounded-lg overflow-hidden hover:border-primary-container transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="A close-up shot of professional grade LED lighting systems for industrial trucks. High-intensity light bars and custom integrated marker lights glowing with a crisp cool white light against a dark metallic truck body. Professional product photography with bokeh background in a dark industrial setting, featuring sharp red highlights. Highly detailed and technical aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBFPjC5TGDWA6fuf3zc2r5WHm693q7X0y0FRNx-_GPhT3_QzN9qjfygpdbIeH1f6LBqL_EblGVGivf-xYDTkYz0qtAW8GjZAkGO9ppFsph7hiqnGnSdmWr6m3RyhSThrQTiFWJtd-aNV95C5n3qIm59OHqbK02eu1hD22S2b66L20bbTRG9HuyPhAAAWq03GuywWWAEdp_7DfNBr2beCzvY-dwQq-7qA0C5ph5yR9Nyq1ivM6qzGxgm4TGJp8xi4M0Ys8e-uU-eycNqknA&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+</div>
+<div class="p-8 relative">
+<div class="h-1 w-12 bg-primary-container mb-6 group-hover:w-full transition-all duration-300"></div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Fiberglass Rüzgarlıklar</h3>
+<ul class="space-y-2 text-on-surface-variant font-body-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span>Çatlamaya karşı dirençli birinci sınıf fiberglass yapı ve sarsıntıya dayanıklı usta işi montaj.</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span>Rüzgar direncini minimuma indirerek uzun yolda yakıt maliyetlerinizi düşürür.</li>
+
+</ul>
+</div>
+</div>
+<!-- Accessory Card 2 -->
+<div class="group relative bg-surface-container border border-zinc rounded-lg overflow-hidden hover:border-primary-container transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Detailed view of high-quality polished chrome truck accessories. Polished bull bars, mirrors, and exhaust stacks gleaming under studio lights in a dark-mode theme gallery. Reflections of red neon tubes are visible on the mirror-finish surfaces. The style is premium, sharp, and emphasizes durability and engineering precision." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC6lh61tlIriqcgwtCPDYWQ0AAq4CiHJB2k6Xlm1JgExQNe4Snat6094GbdCIetSSlRc4kpaGvVzo5W5mcJFLNB9_fS7Ap3liJ89U-OvutV4y_xbZqNkqFT0-1TfKhQHRtnXzykLcUHdSKJ4fp0RKRNCCKjfYjM0vHs-U5_NNioNWVuVQ3feqm61sYY1W9koRKZjUVdPYlEDHKVc3M2VqCS1806fUySxJ91tt7aiW6njjfZkA55fOBl2w&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+</div>
+<div class="p-8 relative">
+<div class="h-1 w-12 bg-primary-container mb-6 group-hover:w-full transition-all duration-300"></div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Krom &amp; Dış Aksesuarlar</h3>
+<ul class="space-y-2 text-on-surface-variant font-body-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span>Paslanmaz Çelik Krom Kaplamalar</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span>Koruma Barları ve Tampon Aksesuarları</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Jant Kapakları ve Süs Modelleri</li>
+</ul>
+</div>
+</div>
+<!-- Accessory Card 3 -->
+<div class="group relative bg-surface-container border border-zinc rounded-lg overflow-hidden hover:border-primary-container transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="A wide-angle shot of a luxurious truck cabin interior retrofit. Custom leather seating with red diamond stitching, carbon fiber dashboard inserts, and a high-tech digital control panel. The interior is illuminated by soft ambient red lighting. The vibe is executive, modern, and high-fidelity, resembling a high-end luxury vehicle interior." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCUUspOlih47FYEtbSDJKIhXeT3gtvjkCJpGMVNF0XqPeRd3GuoVNvrKvZnVlRyS7Aapwbry21FasGgFDsxuXhqQee-Ao6J0Dt0jqpd1qa8SE8w-sAKLWliItbsl_vul8t6AcnTRuS4DSpkl9q62wx9YWq_sw1UTnX2edwtCR20gtxkRf2p7GBZJD4--8_PImFwCj7jKB2rDeq40TZhYuJJoLtTEpLUrT_fggWGgj67g_37yKxcNewptWDwkYvUgcZIqtSO2uLFEuXMkfg&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+</div>
+<div class="p-8 relative">
+<div class="h-1 w-12 bg-primary-container mb-6 group-hover:w-full transition-all duration-300"></div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Kişiye Özel Tasarımlar</h3>
+<ul class="space-y-2 text-on-surface-variant font-body-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span>Aracınıza Özel Tozluklar</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span>Kişiye Özel Tasarımlar</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="glass-panel p-12 rounded-xl text-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4 uppercase">YOL ARKADAŞINIZI YOLLARA HAZIRLAYIN</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto mb-10">Esen Ticaret güvencesiyle, birinci sınıf malzeme ve titiz usta işçiliğini bir araya getiriyoruz. Aracınızı baştan yaratmak için dükkanımıza bekleriz.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+
+
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-border-zinc">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm text-primary-container font-bold mb-6">ESEN TİCARET</div>
+<p class="text-body-sm text-on-surface-variant">1971'den beri ağır vasıtalar için yüksek performanslı fiberglas rüzgarlık üretiyor, aracınıza değer katan en modern aksesuarların satış ve montajını yapıyoruz.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase font-bold">Hizmetler</h4>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">Fiberglass Rüzgarlıklar</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">Krom &amp; Dış Aksesuarlar</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="#">Tozlukta Kişiye Özel Tasarımlar</a>
+</div>
+
+<div class="flex flex-col gap-4">
+
+<div class="flex gap-4">
+
+
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-6 border-t border-border-zinc text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2025 ESEN TİCARET</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Bar -->
+
+<script>
+        // Before/After Slider Logic
+        const container = document.getElementById('sliderContainer');
+        const afterImg = document.getElementById('afterImage');
+        const handle = document.getElementById('sliderHandle');
+
+        function moveSlider(e) {
+            const rect = container.getBoundingClientRect();
+            let x = 0;
+            
+            if (e.type === 'mousemove') {
+                x = e.clientX - rect.left;
+            } else if (e.type === 'touchmove') {
+                x = e.touches[0].clientX - rect.left;
+            }
+
+            const width = rect.width;
+            let percentage = (x / width) * 100;
+            
+            if (percentage < 0) percentage = 0;
+            if (percentage > 100) percentage = 100;
+
+            afterImg.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+            handle.style.left = `${percentage}%`;
+        }
+
+        container.addEventListener('mousemove', moveSlider);
+        container.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            moveSlider(e);
+        });
+
+        // Simple nav interactions
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.textContent === 'Hizmetler') return;
+                navLinks.forEach(l => {
+                    l.classList.remove('text-primary-container', 'border-b-2', 'border-primary-container', 'pb-1');
+                    l.classList.add('text-on-surface-variant');
+                });
+                link.classList.remove('text-on-surface-variant');
+                link.classList.add('text-primary-container', 'border-b-2', 'border-primary-container', 'pb-1');
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-background/95 backdrop-blur-xl translate-x-full transition-transform duration-300 md:hidden">
+  <div class="flex flex-col h-full p-margin-mobile">
+    <div class="flex justify-between items-center mb-16">
+      <div class="font-headline-md text-headline-md font-bold text-primary-container tracking-tighter uppercase">ESEN TİCARET</div>
+      <button id="close-menu" class="text-primary-container" onclick="document.getElementById('mobile-menu').classList.add('translate-x-full')">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-8">
+      <a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary-container transition-colors" href="#">Ana Sayfa</a>
+      <a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary-container transition-colors" href="#">Hakkımızda</a>
+      <a class="font-headline-sm text-headline-sm text-primary-container" href="#">Hizmetler</a>
+      <a class="font-headline-sm text-headline-sm text-on-surface hover:text-primary-container transition-colors" href="#">İletişim</a>
+    </nav>
+    <div class="mt-auto pb-8">
+      <a href="#iletisim-harita" class="w-full bg-primary-container text-on-primary-container font-label-md text-label-md py-4 rounded-lg text-center block uppercase tracking-widest">KONUM &gt;&gt;</a>
+    </div>
+  </div>
+</div></body></html>
